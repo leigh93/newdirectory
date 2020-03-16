@@ -1,0 +1,51 @@
+{% extends 'base.html'%}
+{% load bootstrap3 %}
+{% load static%}
+
+<h1>THE DIRECTORY</h1>
+{% block content%}
+<h5>Welcome  {% if user.is_authenticated%} {{user.username }} {% else %} visitor {% endif %}</h5>
+
+{% for agency in all_agencies %}
+
+    <!-- Card -->
+    <div class="col-md-4">
+            <div class="card">
+                <!-- Card image -->
+                    <div class="view overlay">
+                      <img class="card-img-top" src="{{agency.agency_logo.cdn_url}}" alt="Card image cap">
+                      <a href="#!">
+                        <div class="mask rgba-white-slight"></div>
+                      </a>
+                    </div>
+                  
+                    <!-- Card content -->
+                    <div class="col-md-4">
+                        
+                    </div>
+                    <div class="card-body">
+                  
+                      <!-- Title -->
+                      <h4 class="card-title"> <a href="{{agency.id}}">{{agency.agencyname}}</a></h4>
+                      <!-- Text -->
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <!-- Button -->
+                      <a href="{{agency.id}}" class="btn btn-primary">View Properties</a>
+                  
+                    </div>
+
+    </div>
+
+  
+  </div>
+  <!-- Card -->
+  {% endfor%}
+<a href="{% url 'agency:addagency' %}"><h2>Add an Agency</h2></a>
+  <form action="#"  method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form.as_p}}
+  
+  <input type="submit" value="Add Agency">
+
+  </form>
+{% endblock%}

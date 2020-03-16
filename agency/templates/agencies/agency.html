@@ -1,0 +1,120 @@
+{% extends 'base.html'%}
+{% block content %}
+<div class="row">
+    
+    <!-- agency brief -->
+    <div class="col-md-12">
+        <h1>{{agency.agencyname}}</h1>
+            <div class="col-md-8">
+                    <section>
+                            <div class="py-3">
+                              <div class="card">
+                                <div class="row ">
+                                  <div class="col-md-4">
+                                      <img src="{{agency.agency_logo.url}}" class="w-100">
+                                    </div>
+                                    <div class="col-md-8 px-3">
+                                      <div class="card-block px-3">
+                                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
+                                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                      </div>
+                                    </div>
+                          
+                                  </div>
+                                </div>
+                              </div>
+                          </section>
+        
+        
+        
+            <!-- featured properties -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                        <h5 class="card-title"> <a href="">{{agency.agencyname}}</a> </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="card-link">View Property</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                        <h5 class="card-title"> <a href="">{{agency.agencyname}}</a> </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="card-link">View Properties</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                        <h5 class="card-title"> <a href="">{{agency.agencyname}}</a> </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="card-link">View Properties</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+            <!-- properties list -->
+            <div class="col-md-4">
+                
+                    <div class="card card-image" style="background-image: url({{agency.agency_logo.url}});">
+
+                            <!-- Content -->
+                            <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                            <div>
+                                <h5 class="pink-text"><i class="fas fa-chart-pie"></i> Marketing</h5>
+                                <h3 class="card-title pt-2"><strong>This is the card title</strong></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+                                optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
+                                Odit sed qui, dolorum!.</p>
+                                <a class="btn btn-pink"><i class="fas fa-clone left"></i> {{agency.agencyname}}</a>
+                            </div>
+                            </div>
+                        
+                        </div>
+                    <div class="card card-image" style="background-image: url({{agency.agency_logo.url}});">
+
+                            <!-- Content -->
+                            <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                            <div>
+                                <h5 class="pink-text"><i class="fas fa-chart-pie"></i> Marketing</h5>
+                                <h3 class="card-title pt-2"><strong>This is the card title</strong></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+                                optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
+                                Odit sed qui, dolorum!.</p>
+                                <a class="btn btn-pink"><i class="fas fa-clone left"></i> {{agency.agencyname}}</a>
+                            </div>
+                            </div>
+                        
+                        </div>
+                    <!-- Card -->
+                    <div class="card card-image" style="background-image: url({{agency.agency_logo.url}});">
+
+                        <!-- Content -->
+                        <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                        <div>
+                            <h5 class="pink-text"><i class="fas fa-chart-pie"></i> Marketing</h5>
+                            <h3 class="card-title pt-2"><strong>This is the card title</strong></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+                            optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
+                            Odit sed qui, dolorum!.</p>
+                            <a class="btn btn-pink"><i class="fas fa-clone left"></i> {{agency.agencyname}}</a>
+                        </div>
+                        </div>
+                    
+                    </div>
+                    <!-- Card -->
+                
+        
+            </div>
+        
+        </div>
+
+    </div>
+    
+{% endblock %}

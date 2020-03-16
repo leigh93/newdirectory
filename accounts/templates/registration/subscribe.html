@@ -1,0 +1,9 @@
+{% extends base.html%}
+{% load bootstrap3 %}
+<div class="container-fluid">
+    <form action="{%url 'sendalert'%}">
+        {% csrf_token %}
+        <input type="submit" value='Subscribe'>
+        
+    </form>
+</div>
